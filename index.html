@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHOENIX TEAM | OFFICIAL</title>
+<style>
+:root{
+  --pure-black:#000000;
+  --dark-grey:#2b2b2b;
+  --dirty-beige:#f0e6d2;
+  --neon-purple:#bc13fe;
+  --neon-cyan:#00f3ff;
+  --gold:#d4af37;
+  --text-white:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--dark-grey);
+  color: var(--text-white);
+  line-height: 1.6;
+}
+.page{max-width:1100px;margin:0 auto;padding:20px;text-align:center;}
+header{padding:50px 20px; border-bottom:3px solid var(--dirty-beige);}
+header img{width:180px; filter: drop-shadow(0 0 15px var(--gold)); animation: float 3s infinite ease-in-out;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-15px);}}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card{
+  background: var(--dark-grey);
+  padding: 30px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: 0.3s;
+  border: 2px solid var(--dirty-beige);
+  display: block;
+}
+.card:hover{
+  transform: translateY(-10px);
+  border-color: var(--neon-purple);
+  box-shadow: 0 10px 30px rgba(188,19,254,0.3);
+}
+
+.avatar{
+  width:130px;
+  height:130px;
+  margin:0 auto 15px;
+  border-radius:50%;
+  border: 3px solid var(--gold);
+  overflow: hidden;
+  background: var(--pure-black);
+}
+.avatar img{width:100%; height:100%; object-fit:cover;}
+
+.badge{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--gold);
+  color: #000;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.name{font-size:24px; font-weight:bold; margin-bottom: 5px;}
+.role{color: var(--dirty-beige); font-size:13px; text-transform: uppercase;}
+
+.join-section{
+  margin-top:60px;
+  background: var(--dark-grey);
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid var(--dirty-beige);
+}
+.join-section h2{color: var(--gold); margin-bottom:20px;}
+.join-section ul{list-style:none; text-align:right; margin-bottom:20px;}
+.join-section ul li{margin:8px 0; font-size:16px;}
+.join-section a.btn{
+  display:inline-block;
+  padding:12px 25px;
+  background: var(--pure-black);
+  color: var(--dirty-beige);
+  text-decoration:none;
+  border-radius:12px;
+  font-weight:bold;
+  box-shadow:0 0 15px var(--dirty-beige);
+  transition:0.3s;
+}
+.join-section a.btn:hover{
+  background: #111;
+  box-shadow:0 0 35px var(--dirty-beige);
+}
+
+/* Stats */
+.stats-section{
+  margin-top:50px;
+}
+.stats-grid{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+.stats-card{
+  background: var(--dark-grey);
+  padding:20px;
+  border-radius:15px;
+  border:2px solid var(--dirty-beige);
+  width:150px;
+  box-shadow:0 0 15px var(--dirty-beige);
+}
+.stats-card h3{margin:0 0 5px 0; font-size:26px;}
+.stats-card p{margin:0; font-size:14px; color: var(--dirty-beige);}
+.stats-card.cyan{border-color: var(--neon-cyan); box-shadow:0 0 15px var(--neon-cyan); color: var(--neon-cyan);}
+.stats-card.orange{border-color:orange; box-shadow:0 0 15px orange; color:orange;}
+.stats-card.purple{border-color: var(--neon-purple); box-shadow:0 0 15px var(--neon-purple); color: var(--neon-purple);}
+
+footer{margin-top:50px; padding:20px; color: var(--dirty-beige); font-size:13px;}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://i.postimg.cc/18TzRshy/logo.png" alt="Logo">
+</header>
+
+<div class="page">
+
+  <h2 style="color:var(--gold); letter-spacing: 2px;">ADMINISTRATION</h2>
+  <div class="grid">
+    <a class="card" href="https://www.tiktok.com/@rmztop0" target="_blank">
+      <div class="badge">OWNER</div>
+      <div class="avatar"><img src="https://i.postimg.cc/8FKVHbwN/rmz.png" alt="RMZ"></div>
+      <div class="name">RMZ</div>
+      <div class="role">Management</div>
+    </a>
+    <a class="card" href="https://www.tiktok.com/@906.26" target="_blank">
+      <div class="badge">OWNER</div>
+      <div class="avatar"><img src="https://i.postimg.cc/p9npzgVR/otr.png" alt="OTR"></div>
+      <div class="name">OTR</div>
+      <div class="role">Management</div>
+    </a>
+    <a class="card" href="https://www.tiktok.com/@v9t6x" target="_blank">
+      <div class="badge">OWNER</div>
+      <div class="avatar"><img src="https://i.postimg.cc/1fZbDTPs/t6x.png" alt="T6X"></div>
+      <div class="name">T6X</div>
+      <div class="role">Management</div>
+    </a>
+    <a class="card" href="https://www.tiktok.com/@7.ed2" target="_blank">
+      <div class="badge">FOUNDER</div>
+      <div class="avatar"><img src="https://i.postimg.cc/NKvG9bCk/ed.jpg" alt="ED"></div>
+      <div class="name">ED</div>
+      <div class="role">Founder</div>
+    </a>
+    <a class="card" href="https://www.tiktok.com/@7mw511" target="_blank">
+      <div class="badge">CO-OWNER</div>
+      <div class="avatar"><img src="https://i.postimg.cc/w3B1gWnt/7mw.png" alt="7MW"></div>
+      <div class="name">7MW</div>
+      <div class="role">Co-Owner</div>
+    </a>
+    <a class="card" href="https://www.tiktok.com/@nqrz1" target="_blank">
+      <div class="badge">OWNER</div>
+      <div class="avatar"><img src="https://i.postimg.cc/0bbKdtfb/kai.png" alt="KAI"></div>
+      <div class="name">KAI</div>
+      <div class="role">Team Leader</div>
+    </a>
+  </div>
+
+  <!-- Join Section -->
+  <div class="join-section">
+    <h2>🏆 انضم لفريق Phoniex</h2>
+    <ul>
+      <li>🏆 مسابقات شهرية لأفضل تصميم مع جوائز قيمة.</li>
+      <li>🎬 أكثر من 1200 لقطة حصرية لشخصيات سيرفر ريسبكت.</li>
+      <li>🖼️ أكثر من 300 صورة متنوعة لشخصيات ريسبكت.</li>
+      <li>🔈 مكتبة صوتيات مميزة لشخصيات ريسبكت.</li>
+      <li>📲 شروحات تصميم احترافية لبرامج مثل CapCut, Alight Motion, Pinterest, Video Star والمزيد.</li>
+      <li>🎥 نوفر لك أيضاً كليبات حصرية من ريسبكت.</li>
+    </ul>
+    <a href="https://discord.gg/GaSV4DakxV" target="_blank" class="btn">🔘 انضم الآن</a>
+  </div>
+
+  <!-- Stats Section -->
+  <div class="stats-section">
+    <h2 style="color:var(--gold); margin-bottom:20px;">📊 إحصائيات الفريق</h2>
+    <div class="stats-grid">
+      <div class="stats-card cyan"><h3>261</h3><p>إجمالي الأعضاء</p></div>
+      <div class="stats-card orange"><h3>30</h3><p>الإدارة (Staff)</p></div>
+      <div class="stats-card purple"><h3>73</h3><p>رتبة الـ Editor</p></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>© 2026 PHOENIX TEAM</footer>
+
+</body>
+</html>
